@@ -5,7 +5,6 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
-    
   {
     enunciado: "A poluição do ar está se tornando um problema crítico em muitas cidades?",
     alternativas: [
@@ -70,7 +69,7 @@ const perguntas = [
             afirmacao: "Os governos não aumentarão as áreas protegidas para preservar a biodiversidade."
         }
     ]
- },
+},
 ];
 
 let atual = 0;
@@ -84,12 +83,12 @@ function mostraPergunta() {
     }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = ""; // Limpa as alternativas anteriores
     mostraAlternativas();
 }
 
 function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
+    for (const alternativa de perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
