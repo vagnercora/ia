@@ -6,15 +6,15 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "O desemprego é um problema crescente em muitas economias? ",
+        enunciado: "O desemprego é um problema crescente em muitas economias?",
         alternativas: [
             {
-                texto: "Sim, o desemprego está aumentando em várias economias.1",
-                afirmacao: "O ensino religioso no Brasil será mais inclusivo e diversificado.",
+                texto: "Sim, o desemprego está aumentando em várias economias.",
+                afirmacao: "O desemprego é um problema crescente em muitas economias.",
             },
             {
-                texto: "Não, o ensino religioso no Brasil permanecerá restrito a poucas religiões.",
-                afirmacao: "O ensino religioso no Brasil permanecerá restrito a poucas religiões.",
+                texto: "Não, o desemprego não está aumentando em várias economias.",
+                afirmacao: "O desemprego não é um problema crescente em muitas economias.",
             }
         ]
     },
@@ -30,13 +30,12 @@ const perguntas = [
                 afirmacao: "As escolas brasileiras não integrarão a tecnologia nas aulas de ensino religioso."
             }
         ]
-
     },
     {
         enunciado: "Haverá um maior diálogo inter-religioso nas escolas brasileiras?",
         alternativas: [
             {
-                texto: "Sim, haverá um maior diálogo inter-religioso nas escolas brasileiras",
+                texto: "Sim, haverá um maior diálogo inter-religioso nas escolas brasileiras.",
                 afirmacao: "Haverá um maior diálogo inter-religioso nas escolas brasileiras."
             },
             {
@@ -89,7 +88,7 @@ function mostraPergunta() {
 }
 
 function mostraAlternativas() {
-    for(const alternativa of perguntaAtual.alternativas) {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
