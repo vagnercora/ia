@@ -5,71 +5,72 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
-    {
-        enunciado: "O desemprego é um problema crescente em muitas economias?",
-        alternativas: [
-            {
-                texto: "Sim, o desemprego está aumentando em várias economias.",
-                afirmacao: "O desemprego é um problema crescente em muitas economias.",
-            },
-            {
-                texto: "Não, o desemprego não está aumentando em várias economias.",
-                afirmacao: "O desemprego não é um problema crescente em muitas economias.",
-            }
-        ]
-    },
-    {
-        enunciado: "As escolas brasileiras integrarão a tecnologia nas aulas de ensino religioso?",
-        alternativas: [
-            {
-                texto:  "Sim, as escolas brasileiras integrarão a tecnologia nas aulas de ensino religioso.",
-                afirmacao: "As escolas brasileiras integrarão a tecnologia nas aulas de ensino religioso."
-            },
-            {
-                texto: "Não, as escolas brasileiras não integrarão a tecnologia nas aulas de ensino religioso.",
-                afirmacao: "As escolas brasileiras não integrarão a tecnologia nas aulas de ensino religioso."
-            }
-        ]
-    },
-    {
-        enunciado: "Haverá um maior diálogo inter-religioso nas escolas brasileiras?",
-        alternativas: [
-            {
-                texto: "Sim, haverá um maior diálogo inter-religioso nas escolas brasileiras.",
-                afirmacao: "Haverá um maior diálogo inter-religioso nas escolas brasileiras."
-            },
-            {
-                texto: "Não, não haverá um maior diálogo inter-religioso nas escolas brasileiras.",
-                afirmacao: "Não haverá um maior diálogo inter-religioso nas escolas brasileiras."
-            }
-        ]
-    },
-    {
-        enunciado: "O ensino religioso contribuirá para a formação de cidadãos mais tolerantes e respeitosos?",
-        alternativas: [
-            {
-                texto: "Sim, o ensino religioso contribuirá para a formação de cidadãos mais tolerantes e respeitosos.",
-                afirmacao: "O ensino religioso contribuirá para a formação de cidadãos mais tolerantes e respeitosos."
-            },
-            {
-                texto: "Não, o ensino religioso não contribuirá para a formação de cidadãos mais tolerantes e respeitosos.",
-                afirmacao: "O ensino religioso não contribuirá para a formação de cidadãos mais tolerantes e respeitosos."
-            }
-        ]
-    },
-    {
-        enunciado: "As políticas públicas incentivarão a inclusão do ensino religioso no currículo escolar?",
-        alternativas: [
-            {
-                texto: "Sim, as políticas públicas incentivarão a inclusão do ensino religioso no currículo escolar.",
-                afirmacao: "As políticas públicas incentivarão a inclusão do ensino religioso no currículo escolar."
-            },
-            {
-                texto: "Não, as políticas públicas não incentivarão a inclusão do ensino religioso no currículo escolar.",
-                afirmacao: "As políticas públicas não incentivarão a inclusão do ensino religioso no currículo escolar."
-            }
-        ]
-    },
+    
+  {
+    enunciado: "A mudança climática é um desafio crescente em muitos países?",
+    alternativas: [
+        {
+            texto: "Sim, a mudança climática está se tornando um desafio maior em muitos países.",
+            afirmacao: "A mudança climática é um desafio crescente em muitos países.",
+        },
+        {
+            texto: "Não, a mudança climática não está se tornando um desafio maior em muitos países.",
+            afirmacao: "A mudança climática não é um desafio crescente em muitos países.",
+        }
+    ]
+},
+{
+    enunciado: "As escolas brasileiras adotarão práticas de sustentabilidade em suas atividades diárias?",
+    alternativas: [
+        {
+            texto: "Sim, as escolas brasileiras adotarão práticas de sustentabilidade em suas atividades diárias.",
+            afirmacao: "As escolas brasileiras adotarão práticas de sustentabilidade em suas atividades diárias."
+        },
+        {
+            texto: "Não, as escolas brasileiras não adotarão práticas de sustentabilidade em suas atividades diárias.",
+            afirmacao: "As escolas brasileiras não adotarão práticas de sustentabilidade em suas atividades diárias."
+        }
+    ]
+},
+{
+    enunciado: "Haverá um maior incentivo ao transporte público nas grandes cidades brasileiras?",
+    alternativas: [
+        {
+            texto: "Sim, haverá um maior incentivo ao transporte público nas grandes cidades brasileiras.",
+            afirmacao: "Haverá um maior incentivo ao transporte público nas grandes cidades brasileiras."
+        },
+        {
+            texto: "Não, não haverá um maior incentivo ao transporte público nas grandes cidades brasileiras.",
+            afirmacao: "Não haverá um maior incentivo ao transporte público nas grandes cidades brasileiras."
+        }
+    ]
+},
+{
+    enunciado: "As políticas ambientais contribuirão para a preservação das florestas tropicais?",
+    alternativas: [
+        {
+            texto: "Sim, as políticas ambientais contribuirão para a preservação das florestas tropicais.",
+            afirmacao: "As políticas ambientais contribuirão para a preservação das florestas tropicais."
+        },
+        {
+            texto: "Não, as políticas ambientais não contribuirão para a preservação das florestas tropicais.",
+            afirmacao: "As políticas ambientais não contribuirão para a preservação das florestas tropicais."
+        }
+    ]
+},
+{
+    enunciado: "Os governos incentivarão a utilização de energias renováveis nas áreas urbanas?",
+    alternativas: [
+        {
+            texto: "Sim, os governos incentivarão a utilização de energias renováveis nas áreas urbanas.",
+            afirmacao: "Os governos incentivarão a utilização de energias renováveis nas áreas urbanas."
+        },
+        {
+            texto: "Não, os governos não incentivarão a utilização de energias renováveis nas áreas urbanas.",
+            afirmacao: "Os governos não incentivarão a utilização de energias renováveis nas áreas urbanas."
+        }
+    ]
+ },
 ];
 
 let atual = 0;
